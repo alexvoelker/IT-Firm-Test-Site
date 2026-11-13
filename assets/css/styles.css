@@ -1,11 +1,9 @@
 :root {
-    --primary-color: #e8e8e8;
+    --primary-color: #fcfafa;
     --primary-color-hover: #c7c7c7;
     --primary-header-bg-color: #1c1066;
     --link-ink: #222222;
     --link-ink-footer: #e0e0e1;
-    --primary-footer-bg-color: linear-gradient(to bottom right, #000119, #1b034d, #140266);
-    --primary-header-bg-color: linear-gradient(to bottom, var(--primary-color), #1c1066)
 }
 
 body {
@@ -42,6 +40,8 @@ header {
     flex-flow: wrap;
     justify-content: space-between;
     height: max-content;
+    font-size: large;
+    font-weight: lighter;
 }
 
 .navbarCompanyLogo {
