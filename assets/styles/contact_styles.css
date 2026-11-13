@@ -1,0 +1,92 @@
+.contact-list-template {
+  --contact-font-family:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --contact-primary-text-color: #1e293b;
+  --contact-secondary-text-color: #64748b;
+  --contact-accent-color: #0ea5e9;
+  --contact-icon-size: 24px;
+  --contact-bg-color: #ffffff;
+  --contact-border-color: #e2e8f0;
+
+  font-family: var(--contact-font-family);
+  color: var(--contact-primary-text-color);
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--contact-bg-color);
+  border: 1px solid var(--contact-border-color);
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.contact-list-template *,
+.contact-list-template *::before,
+.contact-list-template *::after {
+  box-sizing: border-box;
+}
+
+.contact-list-template .contact-header {
+  margin-bottom: 2rem;
+}
+
+.contact-list-template .contact-header h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem 0;
+  text-align: center;
+}
+
+.contact-list-template .contact-header p {
+  margin: 0;
+  text-align: center;
+  color: var(--contact-secondary-text-color);
+  font-size: 0.9rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.contact-icon {
+  width: var(--contact-icon-size);
+  height: var(--contact-icon-size);
+  color: var(--contact-accent-color);
+  flex-shrink: 0;
+  margin-top: 0.125em;
+}
+
+.contact-details {
+  line-height: 1.5;
+}
+
+.contact-details-label {
+  font-weight: 600;
+  display: block;
+}
+
+.contact-details-info {
+  color: var(--contact-secondary-text-color);
+  word-break: break-word;
+}
+
+.contact-details a {
+  color: var(--contact-secondary-text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-details a:hover {
+  color: var(--contact-accent-color);
+  text-decoration: underline;
+}

@@ -1,0 +1,193 @@
+.pricing-plan-template {
+  --pricing-font-family:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --pricing-bg-color: #f8f9fa;
+  --card-bg-color: #ffffff;
+  --primary-text-color: #212529;
+  --secondary-text-color: #6c757d;
+  --accent-color: #0d6efd;
+  --accent-color-dark: #0a58ca;
+  --card-border-color: #dee2e6;
+  --recommended-border-color: #0d6efd;
+  --card-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --card-border-radius: 0.5rem;
+
+  font-family: var(--pricing-font-family);
+  color: var(--primary-text-color);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pricing-plan-template *,
+.pricing-plan-template *::before,
+.pricing-plan-template *::after {
+  box-sizing: border-box;
+}
+
+.pricing-plan-template .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.pricing-plan-template .pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-plan-template .pricing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-plan-template .pricing-header p {
+  font-size: 1.125rem;
+  color: var(--secondary-text-color);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pricing-plan-template .pricing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing-plan-template .plan {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .pricing-plan-template .plan {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing-plan-template .plan {
+    flex-basis: calc(33.333% - 1.334rem);
+  }
+}
+
+.pricing-plan-template .plan h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-text-color);
+}
+
+.pricing-plan-template .plan .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-plan-template .plan .price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--secondary-text-color);
+}
+
+.pricing-plan-template .plan .description {
+  color: var(--secondary-text-color);
+  margin-bottom: 2rem;
+  min-height: 40px;
+}
+
+.pricing-plan-template .plan .features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.pricing-plan-template .plan .features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pricing-plan-template .plan .features li svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+}
+
+.pricing-plan-template .plan.recommended {
+  border: 2px solid var(--recommended-border-color);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.pricing-plan-template .plan.recommended::before {
+  content: "Most Popular";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.5rem 2rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.pricing-plan-template .plan.recommended .plan-header {
+  margin-top: 2rem;
+}
+
+.pricing-plan-template .plan .btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: var(--card-border-radius);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--accent-color);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  cursor: pointer;
+}
+
+.pricing-plan-template .plan .btn:hover,
+.pricing-plan-template .plan .btn:focus {
+  background-color: var(--accent-color-dark);
+  border-color: var(--accent-color-dark);
+}
+
+.pricing-plan-template .plan:not(.recommended) .btn {
+  background-color: var(--card-bg-color);
+  color: var(--accent-color);
+  border: 1px solid var(--card-border-color);
+}
+
+.pricing-plan-template .plan:not(.recommended) .btn:hover,
+.pricing-plan-template .plan:not(.recommended) .btn:focus {
+  background-color: #e9ecef;
+  color: var(--primary-text-color);
+}
