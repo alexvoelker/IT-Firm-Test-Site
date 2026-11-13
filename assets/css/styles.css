@@ -30,6 +30,13 @@ main {
   padding: 2rem 1rem;
 }
 
+main > .travel-inspiration-hero {
+  max-width: none;
+  align-self: stretch;
+  width: auto;
+  margin: -2rem -1rem 0;
+}
+
 /* Header Navbar */
 
 header {
