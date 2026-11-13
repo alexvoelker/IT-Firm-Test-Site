@@ -11,6 +11,7 @@ background: linear-gradient(to bottom right, white, lightgray);
 
 .login-form {
     padding-top: min(15rem, 15%);
+    width: 100%;
 }
 
 .btn a {
