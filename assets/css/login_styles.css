@@ -1,0 +1,24 @@
+.gradient-custom {
+/* fallback for old browsers */
+background: lightgray;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to bottom right, white, lightgray);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to bottom right, white, lightgray);
+}
+
+.login-form {
+    padding-top: min(15rem, 15%);
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#loginButton:hover {
+    color: black !important;
+}
+
