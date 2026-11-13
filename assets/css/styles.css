@@ -18,11 +18,11 @@ body {
 }
 
 main {
-    background-image: var(--primary-footer-bg-color);
+    /* background-image: var(--primary-footer-bg-color); */
     color: var(--primary-color);
     /* Change the font family for the main section as needed */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 3rem;
+    /* padding: 3rem; */
     display: relative;
     flex-basis: content;
     flex-grow: 1;
