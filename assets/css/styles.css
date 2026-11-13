@@ -1,136 +1,137 @@
 :root {
-    --primary-color: #fcfafa;
-    --primary-color-hover: #c7c7c7;
-    --primary-header-bg-color: #1c1066;
-    --link-ink: #222222;
-    --link-ink-footer: #e0e0e1;
+  --primary-color: #fcfafa;
+  --primary-color-hover: #c7c7c7;
+  --primary-header-bg-color: #1c1066;
+  --link-ink: #222222;
+  --link-ink-footer: #e0e0e1;
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    /* background-image: var(--primary-footer-bg-color); */
-    color: var(--primary-color);
-    /* Change the font family for the main section as needed */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* padding: 3rem; */
-    display: relative;
-    flex-basis: content;
-    flex-grow: 1;
+  /* background-image: var(--primary-footer-bg-color); */
+  color: var(--primary-color);
+  /* Change the font family for the main section as needed */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* padding: 3rem; */
+  display: flex;
+  flex-basis: content;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
 }
-
 
 /* Header Navbar */
 
 header {
-    position: sticky;
-    z-index: 50;
-    top: 0;
-    padding: 0.5rem 2rem;
-    background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    flex-flow: wrap;
-    justify-content: space-between;
-    height: max-content;
-    font-size: large;
-    font-weight: lighter;
+  position: sticky;
+  z-index: 50;
+  top: 0;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-between;
+  height: max-content;
+  font-size: large;
+  font-weight: lighter;
 }
 
 .navbarCompanyLogo {
-    font-weight: bolder;
-    font-size: 2rem;
+  font-weight: bolder;
+  font-size: 2rem;
 }
 
-
 .navbarLinks ul {
-    list-style-type: none;
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    gap: 2rem;
+  list-style-type: none;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  gap: 2rem;
 }
 
 .navbarLinks a {
-    text-decoration: none;
-    color: var(--link-ink);
-    padding: 0.5rem;
-    border-radius: 10%;
+  text-decoration: none;
+  color: var(--link-ink);
+  padding: 0.5rem;
+  border-radius: 10%;
 }
 
 .navbarLinks a:hover {
-    background-color: var(--primary-color-hover);
-    transition-duration: 500ms;
+  background-color: var(--primary-color-hover);
+  transition-duration: 500ms;
 }
 
 .navbarLinks a[aria-current="page"] {
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .loginButton a {
-    background-color: cornflowerblue;
-    padding: 0.5rem;
-    border-radius: 10%;
-    color: var(--link-ink-footer);
-    font-weight: bold;
+  background-color: cornflowerblue;
+  padding: 0.5rem;
+  border-radius: 10%;
+  color: var(--link-ink-footer);
+  font-weight: bold;
 }
 
 .loginButton a:hover {
-    background-color: rgb(148, 177, 232);
-    color: var(--link-ink);
+  background-color: rgb(148, 177, 232);
+  color: var(--link-ink);
 }
 
 .logoutButton a {
-    background-color: rgb(55, 55, 55);
-    padding: 0.5rem;
-    border-radius: 10%;
-    color: var(--link-ink-footer);
-    font-weight: bold;
+  background-color: rgb(55, 55, 55);
+  padding: 0.5rem;
+  border-radius: 10%;
+  color: var(--link-ink-footer);
+  font-weight: bold;
 }
 
 .logoutButton a:hover {
-    background-color: darkgray;
-    color: var(--link-ink)
+  background-color: darkgray;
+  color: var(--link-ink);
 }
-
 
 /* Footer Section */
 footer {
-    /* left: 0;
+  /* left: 0;
     right: 0; */
-    /* width: 100%; */
-    bottom: 0;
-    height: fit-content;
-    padding: 2rem;
-    background-color: #262626;
+  /* width: 100%; */
+  bottom: 0;
+  height: fit-content;
+  padding: 2rem;
+  background-color: #262626;
 }
 
 .footerSocialMediaIcons img {
-    width: 24px;
+  width: 24px;
 }
 
 footer ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    justify-items: space-between;
-    gap: 2rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  justify-items: space-between;
+  gap: 2rem;
 }
 
 footer a {
-    text-decoration: none;
-    color: var(--link-ink-footer);
-    font-weight: lighter;
+  text-decoration: none;
+  color: var(--link-ink-footer);
+  font-weight: lighter;
 }
 
 /* Main Section Default Styling */
 main {
-    margin: 0;
+  margin: 0;
 }
